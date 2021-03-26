@@ -164,8 +164,8 @@ async def tagall_(message: Message):
         "header": "Silent tag recent 100 members with caption",
         "usage": "{tr}stagall [Text | reply to text Msg]",
     },
-    allow_private=True,
-    allow_via_bot=False,
+    allow_private=False,
+    allow_via_bot=True,
 )
 async def stagall_(message: Message):
     """ tag recent members without spam """
